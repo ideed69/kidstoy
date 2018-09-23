@@ -28,7 +28,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM barangmainan ORDER BY id DESC");
           echo "<tr>";  
           echo "<td>".$no; 
           echo "<td>".$res['nama']."</td>"; 
-          echo "<td>".$res['HARGA']."</td>"; 
+          echo "<td>".$res['harga']."</td>"; 
           echo "<td><a href=\"delete.php?id=$res[id]\" onClick=\return confirm('Adakah anda pasti?')
                     \">hapus</a></td>";
           $no++;
@@ -39,5 +39,5 @@ $result = mysqli_query($mysqli, "SELECT * FROM barangmainan ORDER BY id DESC");
     </center>
   </fieldset>
     </body>
-</html>
+</html>   
 
